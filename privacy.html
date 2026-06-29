@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>隐私政策 — UU影视</title>
+  <link rel="icon" type="image/x-icon" href="favicon.ico" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --bg:       #0a0a0a;
+      --bg-card:  #111111;
+      --bg-card2: #1a1a1a;
+      --gold:     #FF5756;
+      --gold-lt:  #FF7775;
+      --text:     #f0f0f0;
+      --text-muted:#aaaaaa;
+      --radius:   12px;
+    }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'Noto Sans SC', 'PingFang SC', 'Microsoft YaHei', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.8;
+    }
+    a { color: var(--gold); text-decoration: none; }
+    a:hover { color: var(--gold-lt); text-decoration: underline; }
+
+    ::-webkit-scrollbar { width: 6px; }
+    ::-webkit-scrollbar-track { background: var(--bg); }
+    ::-webkit-scrollbar-thumb { background: var(--gold); border-radius: 3px; }
+
+    /* ── Header ── */
+    header {
+      position: sticky; top: 0; z-index: 100;
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 0 5%; height: 60px;
+      backdrop-filter: blur(16px) saturate(180%);
+      -webkit-backdrop-filter: blur(16px) saturate(180%);
+      background: rgba(10,10,10,.8);
+      border-bottom: 1px solid rgba(255,87,86,.2);
+    }
+    .logo {
+      display: flex; align-items: center; gap: 10px;
+      font-size: 1.1rem; font-weight: 700; color: var(--gold-lt);
+      letter-spacing: .05em;
+    }
+    .logo-icon {
+      width: 32px; height: 32px; border-radius: 7px;
+      overflow: hidden; flex-shrink: 0;
+    }
+    .logo-icon img { width: 100%; height: 100%; object-fit: cover; display: block; }
+    .back-link {
+      font-size: .85rem; color: var(--text-muted);
+      display: flex; align-items: center; gap: 6px;
+      transition: color .2s;
+    }
+    .back-link:hover { color: var(--gold); text-decoration: none; }
+    .back-link svg { width: 16px; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+
+    /* ── Hero banner ── */
+    .page-hero {
+      background: linear-gradient(135deg, #150404 0%, #1a0808 50%, #0a0a0a 100%);
+      border-bottom: 1px solid rgba(255,87,86,.15);
+      padding: 72px 5% 56px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .page-hero::before {
+      content: '';
+      position: absolute; inset: 0;
+      background: radial-gradient(ellipse 50% 60% at 50% 100%,
+        rgba(255,87,86,.06) 0%, transparent 70%);
+    }
+    .page-hero-inner { position: relative; z-index: 1; }
+    .page-label {
+      font-size: .72rem; letter-spacing: .25em; color: var(--gold);
+      text-transform: uppercase; margin-bottom: 14px;
+    }
+    .page-title {
+      font-size: clamp(1.8rem, 4vw, 2.8rem); font-weight: 700;
+      letter-spacing: .04em;
+    }
+    .gold-divider {
+      margin: 18px auto 20px;
+      width: 60px; height: 2px;
+      background: linear-gradient(90deg, transparent, var(--gold), transparent);
+    }
+    .page-date { font-size: .82rem; color: var(--text-muted); }
+
+    /* ── Content ── */
+    .content-wrap {
+      max-width: 780px; margin: 0 auto;
+      padding: 64px 24px 80px;
+    }
+
+    /* TOC sidebar look on wide screens */
+    .toc-box {
+      background: var(--bg-card);
+      border: 1px solid rgba(255,87,86,.15);
+      border-left: 3px solid var(--gold);
+      border-radius: var(--radius);
+      padding: 24px 28px;
+      margin-bottom: 48px;
+    }
+    .toc-title {
+      font-size: .75rem; letter-spacing: .2em; color: var(--gold);
+      text-transform: uppercase; margin-bottom: 14px;
+    }
+    .toc-list { list-style: none; display: flex; flex-direction: column; gap: 8px; }
+    .toc-list li a {
+      font-size: .9rem; color: var(--text-muted);
+      transition: color .2s;
+    }
+    .toc-list li a:hover { color: var(--gold); text-decoration: none; }
+    .toc-num {
+      display: inline-block; width: 22px;
+      color: var(--gold); font-size: .8rem; font-weight: 700;
+    }
+
+    /* Sections */
+    .policy-section { margin-bottom: 52px; }
+    .policy-section:last-of-type { margin-bottom: 0; }
+
+    .section-anchor { scroll-margin-top: 80px; }
+    .section-heading {
+      display: flex; align-items: center; gap: 14px;
+      margin-bottom: 20px;
+    }
+    .section-num {
+      width: 36px; height: 36px; flex-shrink: 0;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--gold), #c02020);
+      display: flex; align-items: center; justify-content: center;
+      font-size: .85rem; font-weight: 700; color: #ffffff;
+    }
+    .section-heading h2 {
+      font-size: 1.15rem; font-weight: 700; letter-spacing: .04em;
+    }
+    .section-divider {
+      height: 1px; margin-bottom: 20px;
+      background: linear-gradient(90deg, rgba(255,87,86,.3), transparent);
+    }
+    p { font-size: .93rem; color: var(--text-muted); margin-bottom: 14px; }
+    p:last-child { margin-bottom: 0; }
+
+    /* highlight box */
+    .highlight-box {
+      background: var(--bg-card2);
+      border: 1px solid rgba(255,87,86,.15);
+      border-radius: 8px;
+      padding: 18px 22px;
+      margin: 18px 0;
+    }
+    .highlight-box ul {
+      list-style: none;
+      display: flex; flex-direction: column; gap: 10px;
+      margin: 0;
+    }
+    .highlight-box li {
+      font-size: .9rem; color: var(--text-muted);
+      display: flex; align-items: flex-start; gap: 10px;
+    }
+    .bullet-dot {
+      width: 6px; height: 6px; border-radius: 50%;
+      background: var(--gold); flex-shrink: 0; margin-top: .45em;
+    }
+
+    /* contact box */
+    .contact-box {
+      background: var(--bg-card);
+      border: 1px solid rgba(255,87,86,.2);
+      border-radius: var(--radius);
+      padding: 28px 32px;
+      display: flex; align-items: center; gap: 20px; flex-wrap: wrap;
+    }
+    .contact-icon { font-size: 2rem; }
+    .contact-info { flex: 1; min-width: 200px; }
+    .contact-info p { margin: 0; }
+    .contact-info .email {
+      font-size: 1rem; color: var(--gold-lt); font-weight: 500; margin-top: 4px;
+    }
+
+    /* Footer */
+    footer {
+      background: #050505;
+      border-top: 1px solid rgba(255,87,86,.12);
+      padding: 28px 5%;
+      display: flex; justify-content: space-between; align-items: center;
+      flex-wrap: wrap; gap: 14px;
+    }
+    .footer-copy { font-size: .8rem; color: var(--text-muted); }
+    .footer-links { display: flex; gap: 20px; }
+    .footer-links a { font-size: .8rem; color: var(--text-muted); transition: color .2s; }
+    .footer-links a:hover { color: var(--gold); text-decoration: none; }
+
+    @media (max-width: 520px) {
+      footer { flex-direction: column; text-align: center; }
+      .footer-links { justify-content: center; }
+      .contact-box { flex-direction: column; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ── Header ── -->
+<header>
+  <div class="logo">
+    <div class="logo-icon"><img src="icon.png" alt="UU影视" /></div>
+    UU影视
+  </div>
+  <a href="index.html" class="back-link">
+    <svg viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"/></svg>
+    返回主页
+  </a>
+</header>
+
+<!-- ── Hero ── -->
+<div class="page-hero">
+  <div class="page-hero-inner">
+    <p class="page-label">Legal</p>
+    <h1 class="page-title">隐私政策</h1>
+    <div class="gold-divider"></div>
+    <p class="page-date">生效日期：2026 年 1 月 1 日 &nbsp;|&nbsp; 最后更新：2026 年 1 月 1 日</p>
+  </div>
+</div>
+
+<!-- ── Content ── -->
+<div class="content-wrap">
+
+  <!-- 引言 -->
+  <div class="policy-section">
+    <p>
+      欢迎使用 <strong style="color:var(--gold-lt)">UU影视</strong>（以下简称"本应用"或"我们"）。
+      我们非常重视您的个人隐私与数据安全。本隐私政策将向您说明我们如何收集、使用和保护您的信息。
+      使用本应用，即表示您同意本政策所述条款。
+    </p>
+  </div>
+
+  <!-- 目录 -->
+  <div class="toc-box">
+    <p class="toc-title">目录</p>
+    <ul class="toc-list">
+      <li><a href="#s1"><span class="toc-num">01</span> 信息收集</a></li>
+      <li><a href="#s2"><span class="toc-num">02</span> 信息使用</a></li>
+      <li><a href="#s3"><span class="toc-num">03</span> 信息保护</a></li>
+      <li><a href="#s4"><span class="toc-num">04</span> 联系我们</a></li>
+    </ul>
+  </div>
+
+  <!-- S1 -->
+  <div class="policy-section" id="s1">
+    <div class="section-anchor"></div>
+    <div class="section-heading">
+      <span class="section-num">01</span>
+      <h2>信息收集</h2>
+    </div>
+    <div class="section-divider"></div>
+    <p>
+      我们遵循最小化原则，仅在必要时收集与改善应用体验直接相关的信息。
+      我们不会主动收集您的姓名、手机号码、电子邮件或身份证等个人身份信息。
+    </p>
+    <p>我们可能自动收集以下匿名技术信息：</p>
+    <div class="highlight-box">
+      <ul>
+        <li><span class="bullet-dot"></span>崩溃日志与错误报告（匿名化，不含个人身份信息）</li>
+        <li><span class="bullet-dot"></span>设备类型、Android 版本、屏幕分辨率等设备基础信息</li>
+        <li><span class="bullet-dot"></span>应用版本号及安装来源（用于统计分发渠道）</li>
+        <li><span class="bullet-dot"></span>应用启动次数与基础使用频率（聚合统计，非个人级别）</li>
+      </ul>
+    </div>
+    <p>
+      以上数据均经过匿名化处理，无法用于识别特定个人身份，
+      且仅在本应用内部用于技术改善目的。
+    </p>
+  </div>
+
+  <!-- S2 -->
+  <div class="policy-section" id="s2">
+    <div class="section-anchor"></div>
+    <div class="section-heading">
+      <span class="section-num">02</span>
+      <h2>信息使用</h2>
+    </div>
+    <div class="section-divider"></div>
+    <p>我们收集的有限信息仅用于以下目的：</p>
+    <div class="highlight-box">
+      <ul>
+        <li><span class="bullet-dot"></span>分析崩溃与异常，修复 Bug，提升应用稳定性</li>
+        <li><span class="bullet-dot"></span>了解设备兼容性分布，优化不同机型的适配效果</li>
+        <li><span class="bullet-dot"></span>评估功能使用情况，指导后续版本的开发方向</li>
+        <li><span class="bullet-dot"></span>满足法律法规的合规要求</li>
+      </ul>
+    </div>
+    <p>
+      我们不会将您的任何信息用于广告投放、用户画像构建或任何商业营销目的。
+    </p>
+  </div>
+
+  <!-- S3 -->
+  <div class="policy-section" id="s3">
+    <div class="section-anchor"></div>
+    <div class="section-heading">
+      <span class="section-num">03</span>
+      <h2>信息保护</h2>
+    </div>
+    <div class="section-divider"></div>
+    <p>
+      我们采取行业标准的安全措施保护您的数据，承诺如下：
+    </p>
+    <div class="highlight-box">
+      <ul>
+        <li><span class="bullet-dot"></span><strong style="color:var(--text)">不出售用户数据</strong>：我们绝不将任何用户数据出售、出租或以任何形式转让给第三方</li>
+        <li><span class="bullet-dot"></span><strong style="color:var(--text)">不共享个人信息</strong>：我们不与广告商、数据经纪商等第三方共享可识别个人身份的信息</li>
+        <li><span class="bullet-dot"></span><strong style="color:var(--text)">数据最小化存储</strong>：技术日志仅保留用于分析所需的最短时间，之后自动删除</li>
+        <li><span class="bullet-dot"></span><strong style="color:var(--text)">本地优先设计</strong>：用户设置、观看记录等个人偏好数据均存储在您的设备本地，不上传服务器</li>
+        <li><span class="bullet-dot"></span><strong style="color:var(--text)">数据加密</strong>：本地存储的敏感配置数据使用系统级加密保护</li>
+      </ul>
+    </div>
+    <p>
+      如发生数据安全事件，我们将依照适用法律要求，及时通知受影响用户并采取相应补救措施。
+    </p>
+  </div>
+
+  <!-- S4 -->
+  <div class="policy-section" id="s4">
+    <div class="section-anchor"></div>
+    <div class="section-heading">
+      <span class="section-num">04</span>
+      <h2>联系我们</h2>
+    </div>
+    <div class="section-divider"></div>
+    <p>
+      如果您对本隐私政策有任何疑问、意见或请求（包括查阅、更正或删除您的信息），
+      欢迎通过以下方式联系我们，我们将在合理时间内回复：
+    </p>
+    <div class="contact-box">
+      <span class="contact-icon">✉️</span>
+      <div class="contact-info">
+        <p style="color:var(--text-muted);font-size:.85rem;">电子邮箱</p>
+        <p class="email">shocklele@gmail.com</p>
+        <p style="font-size:.82rem;margin-top:6px;">我们通常在 7 个工作日内回复您的来信。</p>
+      </div>
+    </div>
+    <p style="margin-top:20px;">
+      本隐私政策可能随应用更新而调整。重大变更时，我们将在应用内发出通知。
+      继续使用本应用视为接受最新版本隐私政策。
+    </p>
+  </div>
+
+</div><!-- /content-wrap -->
+
+<!-- ── Footer ── -->
+<footer>
+  <p class="footer-copy">&copy; 2026 UU影视. All rights reserved.</p>
+  <div class="footer-links">
+    <a href="index.html">返回主页</a>
+    <a href="#s1">信息收集</a>
+    <a href="#s3">信息保护</a>
+  </div>
+</footer>
+
+</body>
+</html>
