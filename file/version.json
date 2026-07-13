@@ -1,6 +1,6 @@
 {
-  "versionCode": 20102,
-  "versionName": "2.1.2",
-  "url1": "https://gcore.jsdelivr.net/gh/shocklele/uuv.github.io@main/file/appuu20102sign.apk",
-  "description": "1、优化视频播放速度\n2、重构下载功能"
+  "versionCode": 20103,
+  "versionName": "2.1.3",
+  "url1": "https://gcore.jsdelivr.net/gh/shocklele/uuv.github.io@main/file/appuu20103sign.apk",
+  "description": "1、增加长按2倍速播放\n2、优化网络加载速度"
 }
