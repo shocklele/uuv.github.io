@@ -9,21 +9,23 @@
       location.replace('https://uulook.top' + location.pathname + location.search + location.hash);
     }
   </script>
-  <title>UU影视 — 免费高清影视App下载 | 电影·剧集·短剧在线看</title>
+  <title>UU影视（爱壹帆国际版）— 免费高清影视App下载 | 电影·剧集·短剧在线看</title>
   <meta name="description" content="UU影视是一款免费的 Android 高清影视应用，海量电影、剧集、综艺、短剧在线观看，秒开不卡顿，纯净无广告。仅 6MB，支持 Android 9.0 以上，立即下载 APK。" />
-  <meta name="keywords" content="UU影视,影视App,免费看电影,在线视频,短剧App,APK下载,安卓影视" />
+  <meta name="keywords" content="UU影视,爱一番,爱壹帆,爱壹帆国际版,爱壹帆国际版海量高清视频免费在线观看,影视App,免费看电影,海量高清视频免费在线观看,在线视频,短剧App,APK下载,安卓影视" />
   <link rel="canonical" href="https://uulook.top/" />
+  <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1" />
+  <link rel="preload" as="image" href="icon.png" fetchpriority="high" />
   <meta name="theme-color" content="#0a0a0a" />
   <!-- Open Graph / 社交分享 -->
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="UU影视" />
-  <meta property="og:title" content="UU影视 — 免费高清影视App下载" />
+  <meta property="og:title" content="UU影视（爱壹帆国际版）— 免费高清影视App下载" />
   <meta property="og:description" content="海量电影、剧集、综艺、短剧在线观看，秒开不卡顿，纯净无广告。免费下载 Android APK。" />
   <meta property="og:url" content="https://uulook.top/" />
   <meta property="og:image" content="https://uulook.top/icon.png" />
   <meta property="og:locale" content="zh_CN" />
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="UU影视 — 免费高清影视App下载" />
+  <meta name="twitter:title" content="UU影视（爱壹帆国际版）— 免费高清影视App下载" />
   <meta name="twitter:description" content="海量电影、剧集、综艺、短剧在线观看，秒开不卡顿，纯净无广告。" />
   <meta name="twitter:image" content="https://uulook.top/icon.png" />
   <link rel="icon" type="image/x-icon" href="favicon.ico" />
@@ -32,6 +34,7 @@
     "@context": "https://schema.org",
     "@type": "MobileApplication",
     "name": "UU影视",
+    "alternateName": ["爱一番", "爱壹帆", "爱壹帆国际版", "爱壹帆国际版-海量高清视频免费在线观看"],
     "operatingSystem": "Android 9.0+",
     "applicationCategory": "EntertainmentApplication",
     "description": "免费高清影视应用，海量电影、剧集、综艺、短剧在线观看，纯净无广告。",
@@ -40,6 +43,44 @@
     "fileSize": "6MB",
     "offers": { "@type": "Offer", "price": "0", "priceCurrency": "CNY" },
     "url": "https://uulook.top/"
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "UU影视（爱一番 / 爱壹帆 / 爱壹帆国际版）是什么？",
+        "acceptedAnswer": { "@type": "Answer", "text": "UU影视又名爱一番、爱壹帆、爱壹帆国际版，是一款免费的 Android 高清影视应用，提供海量电影、剧集、综艺、短剧在线观看，秒开流畅、纯净无广告。" }
+      },
+      {
+        "@type": "Question",
+        "name": "UU影视是免费的吗？",
+        "acceptedAnswer": { "@type": "Answer", "text": "完全免费。应用没有会员付费或内购，也不含任何广告，所有影视内容均可免费在线观看。" }
+      },
+      {
+        "@type": "Question",
+        "name": "UU影视安全吗？会不会有广告或捆绑安装？",
+        "acceptedAnswer": { "@type": "Answer", "text": "安装包仅约 6MB，零广告骚扰、无捆绑安装，不收集与观看无关的隐私信息，体验干净纯粹。" }
+      },
+      {
+        "@type": "Question",
+        "name": "支持哪些系统？如何下载安装？",
+        "acceptedAnswer": { "@type": "Answer", "text": "支持 Android 9.0 及以上系统。点击页面上方「APK 下载」按钮获取安装包，下载完成后在手机上打开 APK 按提示安装即可；若系统提示未知来源，请在设置中允许后再安装。" }
+      },
+      {
+        "@type": "Question",
+        "name": "有 iOS（苹果）版本吗？",
+        "acceptedAnswer": { "@type": "Answer", "text": "目前仅提供 Android 版本，暂无 iOS 版本。" }
+      },
+      {
+        "@type": "Question",
+        "name": "影视资源多吗？会持续更新吗？",
+        "acceptedAnswer": { "@type": "Answer", "text": "应用内置多站点片源，涵盖电影、剧集、综艺、短剧，内容持续更新，并会根据网络情况自动推荐更优的播放线路。" }
+      }
+    ]
   }
   </script>
   <style>
@@ -330,6 +371,38 @@
     }
     .btn-hint { font-size: .73rem; color: var(--text-muted); letter-spacing: .06em; }
 
+    /* ── FAQ ── */
+    #faq { background: var(--bg); }
+    .faq-list {
+      max-width: 760px; margin: 0 auto;
+      display: flex; flex-direction: column; gap: 16px;
+    }
+    .faq-item {
+      background: var(--bg-card2);
+      border: 1px solid rgba(255,87,86,.12);
+      border-radius: var(--radius);
+      padding: 0 24px;
+      transition: border-color .3s;
+    }
+    .faq-item[open] { border-color: rgba(255,87,86,.35); }
+    .faq-item summary {
+      cursor: pointer; list-style: none;
+      padding: 20px 0;
+      font-size: 1rem; font-weight: 600; color: var(--text);
+      display: flex; align-items: center; justify-content: space-between; gap: 16px;
+    }
+    .faq-item summary::-webkit-details-marker { display: none; }
+    .faq-item summary::after {
+      content: '+'; flex-shrink: 0;
+      color: var(--gold); font-size: 1.5rem; font-weight: 300; line-height: 1;
+      transition: transform .25s;
+    }
+    .faq-item[open] summary::after { transform: rotate(45deg); }
+    .faq-answer {
+      padding: 0 0 20px;
+      font-size: .9rem; color: var(--text-muted); line-height: 1.75;
+    }
+
     /* ── Footer ── */
     footer {
       background: #050505;
@@ -339,6 +412,11 @@
       flex-wrap: wrap; gap: 16px;
     }
     .footer-copy { font-size: .82rem; color: var(--text-muted); }
+    .footer-alias {
+      flex-basis: 100%;
+      font-size: .74rem; color: #666; line-height: 1.6;
+      letter-spacing: .02em;
+    }
     .footer-links { display: flex; gap: 24px; }
     .footer-links a {
       font-size: .82rem; color: var(--text-muted);
@@ -367,13 +445,14 @@
 <!-- ═══════════════ HEADER ═══════════════ -->
 <header id="header">
   <div class="logo">
-    <div class="logo-icon"><img src="icon.png" alt="UU影视" /></div>
+    <div class="logo-icon"><img src="icon.png" alt="UU影视" width="36" height="36" /></div>
     UU影视
   </div>
   <nav>
     <a href="#features">功能</a>
     <a href="#screenshots">预览</a>
     <a href="#download">下载</a>
+    <a href="#faq">问答</a>
   </nav>
 </header>
 
@@ -381,7 +460,7 @@
 <section id="hero">
   <canvas id="hero-canvas"></canvas>
   <div class="hero-content">
-    <div class="app-icon"><img src="icon.png" alt="UU影视图标" /></div>
+    <div class="app-icon"><img src="icon.png" alt="UU影视（爱壹帆国际版）App 图标" width="120" height="120" /></div>
     <div class="film-border">
       <span class="film-strip"></span>
       <h1 class="hero-title">UU影视</h1>
@@ -590,6 +669,41 @@
   </div>
 </section>
 
+<!-- ═══════════════ FAQ ═══════════════ -->
+<section id="faq">
+  <div class="section-header">
+    <p class="section-label">常见问题</p>
+    <h2 class="section-title">关于 UU影视（爱壹帆国际版）</h2>
+    <div class="gold-divider"></div>
+  </div>
+  <div class="faq-list">
+    <details class="faq-item">
+      <summary>UU影视（爱一番 / 爱壹帆 / 爱壹帆国际版）是什么？</summary>
+      <div class="faq-answer">UU影视又名爱一番、爱壹帆、爱壹帆国际版，是一款免费的 Android 高清影视应用，提供海量电影、剧集、综艺、短剧在线观看，秒开流畅、纯净无广告。</div>
+    </details>
+    <details class="faq-item">
+      <summary>UU影视是免费的吗？</summary>
+      <div class="faq-answer">完全免费。应用没有会员付费或内购，也不含任何广告，所有影视内容均可免费在线观看。</div>
+    </details>
+    <details class="faq-item">
+      <summary>UU影视安全吗？会不会有广告或捆绑安装？</summary>
+      <div class="faq-answer">安装包仅约 6MB，零广告骚扰、无捆绑安装，不收集与观看无关的隐私信息，体验干净纯粹。</div>
+    </details>
+    <details class="faq-item">
+      <summary>支持哪些系统？如何下载安装？</summary>
+      <div class="faq-answer">支持 Android 9.0 及以上系统。点击页面上方「APK 下载」按钮获取安装包，下载完成后在手机上打开 APK 按提示安装即可；若系统提示未知来源，请在设置中允许后再安装。</div>
+    </details>
+    <details class="faq-item">
+      <summary>有 iOS（苹果）版本吗？</summary>
+      <div class="faq-answer">目前仅提供 Android 版本，暂无 iOS 版本。</div>
+    </details>
+    <details class="faq-item">
+      <summary>影视资源多吗？会持续更新吗？</summary>
+      <div class="faq-answer">应用内置多站点片源，涵盖电影、剧集、综艺、短剧，内容持续更新，并会根据网络情况自动推荐更优的播放线路。</div>
+    </details>
+  </div>
+</section>
+
 <!-- ═══════════════ FOOTER ═══════════════ -->
 <footer>
   <p class="footer-copy">&copy; 2026 UU影视. All rights reserved.</p>
@@ -598,6 +712,7 @@
     <a href="#features">功能介绍</a>
     <a href="#download">下载</a>
   </div>
+  <p class="footer-alias">UU影视又名「爱一番」「爱壹帆」「爱壹帆国际版」，海量高清视频免费在线观看，涵盖电影、剧集、综艺、短剧。</p>
 </footer>
 
 <script>
@@ -648,6 +763,17 @@
   window.addEventListener('resize', () => { resize(); });
   init();
   draw();
+
+  // Hero 滚出视口时暂停动画，回到视口再恢复，避免持续占用 CPU
+  let running = true;
+  const hero = document.getElementById('hero');
+  if (hero && 'IntersectionObserver' in window) {
+    new IntersectionObserver(entries => {
+      const visible = entries[0].isIntersecting;
+      if (visible && !running) { running = true; draw(); }
+      else if (!visible && running) { running = false; cancelAnimationFrame(animId); }
+    }, { threshold: 0 }).observe(hero);
+  }
 })();
 
 /* ── Screenshot drag scroll ── */
