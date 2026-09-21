@@ -3,7 +3,7 @@
 一款免费的 Android 高清影视应用：海量电影、剧集、综艺、短剧在线观看，秒开不卡顿，纯净无广告。
 
 - 官网 / 下载：<https://uulook.top>
-- 当前版本：v2.1.3（versionCode 20103）
+- 当前版本：v2.1.5（versionCode 20105）
 - 系统要求：Android 9.0+（minSdk 28），仅支持 arm64-v8a
 - 安装包体积：约 6 MB
 
