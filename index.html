@@ -64,7 +64,7 @@
       {
         "@type": "Question",
         "name": "支持哪些系统？如何下载安装？",
-        "acceptedAnswer": { "@type": "Answer", "text": "支持 Android 9.0 及以上系统。点击页面上方「APK 下载」按钮获取安装包，下载完成后在手机上打开 APK 按提示安装即可；若系统提示未知来源，请在设置中允许后再安装。" }
+        "acceptedAnswer": { "@type": "Answer", "text": "支持 Android 9.0 及以上系统。点击页面上方「UU影视下载」按钮获取安装包，下载完成后在手机上打开 APK 按提示安装即可；若系统提示未知来源，请在设置中允许后再安装。" }
       },
       {
         "@type": "Question",
@@ -336,6 +336,11 @@
       display: flex; flex-direction: column; align-items: center; gap: 6px;
       width: 100%;
     }
+    .dl-btn-row {
+      display: flex; justify-content: center; flex-wrap: wrap; gap: 16px;
+      width: 100%;
+    }
+    .download-btns a { max-width: 100%; }
     .btn-dl-primary {
       width: 280px; padding: 14px 0;
       font-size: 1rem; font-weight: 600; letter-spacing: .06em;
@@ -443,6 +448,7 @@
       nav { gap: 20px; }
       .features-grid { grid-template-columns: 1fr; }
       .download-meta { gap: 24px; }
+      .dl-btn-row { flex-direction: column; align-items: center; gap: 10px; }
       footer { flex-direction: column; text-align: center; }
       .footer-links { justify-content: center; }
     }
@@ -662,19 +668,28 @@
     </div>
     <div class="download-btns">
       <div class="dl-btn-wrap">
-        <a href="https://gcore.jsdelivr.net/gh/shocklele/uuv.github.io@main/file/appuu20107sign.apk" id="btn-primary" class="btn-dl-primary">APK 下载</a>
+        <div class="dl-btn-row">
+          <a href="https://gcore.jsdelivr.net/gh/shocklele/uuv.github.io@main/file/appuu20107sign.apk" id="btn-primary" class="btn-dl-primary">UU影视下载</a>
+          <a href="https://gcore.jsdelivr.net/gh/shocklele/uuv.github.io@main/file/dafei103sign.apk" id="btn-dafei-primary" class="btn-dl-primary" aria-label="大飞视频下载（主线路）">大飞视频下载</a>
+        </div>
         <span class="btn-hint">主线路 · 推荐</span>
       </div>
       <div class="dl-btn-wrap">
-        <a href="https://bigwan.lanzouu.com/b0he08bmd" id="btn-mirror1" class="btn-dl-outline">备用线路 1</a>
+        <a href="https://bigwan.lanzouu.com/b0he08bmd" id="btn-mirror1" class="btn-dl-outline">网盘下载</a>
         <span class="btn-hint">蓝奏云 · 提取码 3b1q</span>
       </div>
       <div class="dl-btn-wrap">
-        <a href="https://file.uulook.top/appuu20107sign.apk" id="btn-mirror2" class="btn-dl-outline">备用线路 2</a>
+        <div class="dl-btn-row">
+          <a href="https://file.uulook.top/appuu20107sign.apk" id="btn-mirror2" class="btn-dl-outline">UU影视下载</a>
+          <a href="https://file.uulook.top/dafei103sign.apk" id="btn-dafei-mirror2" class="btn-dl-outline" aria-label="大飞视频下载（高速线路）">大飞视频下载</a>
+        </div>
         <span class="btn-hint">备用线路 · 高速</span>
       </div>
       <div class="dl-btn-wrap">
-        <a href="https://uulook.top/file/appuu20107sign.apk" id="btn-mirror3" class="btn-dl-outline">备用线路 3</a>
+        <div class="dl-btn-row">
+          <a href="https://uulook.top/file/appuu20107sign.apk" id="btn-mirror3" class="btn-dl-outline">UU影视下载</a>
+          <a href="https://uulook.top/file/dafei103sign.apk" id="btn-dafei-mirror3" class="btn-dl-outline" aria-label="大飞视频下载（备用线路 3）">大飞视频下载</a>
+        </div>
         <span class="btn-hint">备用线路 · 快速</span>
       </div>
     </div>
@@ -703,7 +718,7 @@
     </details>
     <details class="faq-item">
       <summary>支持哪些系统？如何下载安装？</summary>
-      <div class="faq-answer">支持 Android 9.0 及以上系统。点击页面上方「APK 下载」按钮获取安装包，下载完成后在手机上打开 APK 按提示安装即可；若系统提示未知来源，请在设置中允许后再安装。</div>
+      <div class="faq-answer">支持 Android 9.0 及以上系统。点击页面上方「UU影视下载」按钮获取安装包，下载完成后在手机上打开 APK 按提示安装即可；若系统提示未知来源，请在设置中允许后再安装。</div>
     </details>
     <details class="faq-item">
       <summary>有 iOS（苹果）版本吗？</summary>
